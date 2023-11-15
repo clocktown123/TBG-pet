@@ -43,10 +43,11 @@ int main() {
 		case 1:
 			cout << "You seem to be in the living room right now with an empty (i)nventory and a small (D)og who seems to like you. You can go (e)ast." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'e')
 				room = 2;
 			if (direction == 'i')
@@ -60,10 +61,11 @@ int main() {
 		case 2:
 			cout << "you're in a dim lighted room with nothing in it. You can go (s)outh or (w)est." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 's')
 				room = 3;
 			else if (direction == 'w')
@@ -79,10 +81,11 @@ int main() {
 		case 3:
 			cout << "you're in a room with a creepy doll sitting in the corner. You can go (s)outh or (n)orth." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 's')
 				room = 4;
 			else if (direction == 'n')
@@ -98,10 +101,11 @@ int main() {
 		case 4:
 			cout << "you're in a room that looks exactly the same as the last room, but there are two dolls now. You can go (e)ast or (n)orth." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'e')
 				room = 5;
 			else if (direction == 'n')
@@ -117,10 +121,11 @@ int main() {
 		case 5:
 			cout << "you're in a room filled with dolls, you see an old creeky stair case leading downstairs. You can go (w)est or (S)tairs." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'w')
 				room = 4;
 			if (direction == 'S')
@@ -136,10 +141,11 @@ int main() {
 		case 6:
 			cout << "you look around, you see a chair, desk, and an old broken down ceeling fan. You can go (S)tairs or (s)outh." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'S')
 				room = 5;
 			if (direction == 's')
@@ -155,10 +161,11 @@ int main() {
 		case 7:
 			cout << "this room has nothing in it, but you get an eerie feeling. You can go (n)orth or (e)ast." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'n')
 				room = 6;
 			if (direction == 'e')
@@ -174,10 +181,11 @@ int main() {
 		case 8:
 			cout << "you're in a dark room, you can just barely see a light at the end of the room. You can go (w)est or (e)ast." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'w')
 				room = 7;
 			if (direction == 'e')
@@ -204,10 +212,11 @@ int main() {
 				cout << "you're in a room with 2 pathways in front of you. You can go (w)est, (n)orth, or (L)ocked door." << endl;
 			}
 
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'i')
 				//print out inventory
 				cout << "your inventory:" << endl;
@@ -233,10 +242,11 @@ int main() {
 			if (inventory[0] != "key")
 				cout << "Oh wait, you see a shiny (k)ey in the corner." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'i')
 				//print out inventory
 				cout << "your inventory:" << endl;
@@ -257,10 +267,11 @@ int main() {
 			cout << "you're in a room made of stone with a (m)etal door at the end, you feel and eerie feeling as you aprouch the door. You can go (w)est" << endl;
 			cout << "theres a (t)reasure chest in the corner of the room" << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'i')
 				//print out inventory
 				cout << "your inventory:" << endl;
@@ -278,10 +289,11 @@ int main() {
 		case 12:
 			cout << "there is a very (o)ld man in the corner and an open (d)oorway at the end of the room." << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'o')
 				Shop();//call the function
 			if (direction == 'i')
@@ -299,10 +311,11 @@ int main() {
 
 			cout << " The old man " << endl;
 			cin >> direction;
-			if (direction == 'D')
+			if (direction == 'D') {
 				affinity += 10;
 				PetGen();
 				cout << "The dogs affinity towards you has raised by 10. Its affinity is now " << affinity << endl;
+			}
 			if (direction == 'e')
 				room = 14;
 			if (direction == 'i')
@@ -501,4 +514,3 @@ void PetGen() {
 	else
 		cout << "Tyrone meows?" << endl;
 }
-
